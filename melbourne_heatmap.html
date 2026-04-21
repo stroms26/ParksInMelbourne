@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_31cd425e09efc80bb9903a3e69358f47 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 30px; left: 30px; z-index: 9999;
+            background: white; padding: 10px 14px; border: 1px solid #888;
+            border-radius: 6px; font-size: 13px; box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+            color: black;">
+  <b>Sensor class</b> <span style="color:#555;">(blue outline)</span><br>
+  <span style="display:inline-block;width:12px;height:12px;background:#2E8B57;border:2px solid #1E5FA8;border-radius:50%;margin-right:6px;"></span>Park<br>
+  <span style="display:inline-block;width:12px;height:12px;background:#C2513C;border:2px solid #1E5FA8;border-radius:50%;margin-right:6px;"></span>Street<br>
+  <span style="display:inline-block;width:12px;height:12px;background:#3B6FB6;border:2px solid #1E5FA8;border-radius:50%;margin-right:6px;"></span>Rooftop<br>
+  <hr style="margin:6px 0;">
+  <b>Heat layer</b>: summer afternoon mean temp (ground only)<br>
+  <div style="margin-top:4px;height:10px;width:180px;border:1px solid #666;
+              background:linear-gradient(to right,#2166AC,#67A9CF,#FFFFBF,#F4A582,#B2182B);"></div>
+  <div style="display:flex;justify-content:space-between;width:180px;font-size:11px;color:#333;">
+    <span>23.9°C</span><span>cool ↔ warm</span><span>25.3°C</span>
+  </div>
+  <hr style="margin:6px 0;">
+  <b>Citywide mean wind</b>: 1.45 m/s<br>
+  <span style="color:#555;">(summer afternoons, 13:00-17:00)</span>
+</div>
+    
+            <div class="folium-map" id="map_31cd425e09efc80bb9903a3e69358f47" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_31cd425e09efc80bb9903a3e69358f47 = L.map(
+                "map_31cd425e09efc80bb9903a3e69358f47",
+                {
+                    center: [-37.816234224999995, 144.9679347375],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5a1a5ef8e5a6a98d566f0db6f1eba13 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d5a1a5ef8e5a6a98d566f0db6f1eba13.addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+            var heat_map_86602e4336aebd4af163da8a087dd25b = L.heatLayer(
+                [[-37.812888, 144.9750857, 0.14285714285714285], [-37.8221828, 144.9562225, 0.5714285714285714], [-37.8185931, 144.9716404, 0.7142857142857143], [-37.8204083, 144.9591192, 0.2857142857142857], [-37.7956167, 144.9519007, 0.0], [-37.8184515, 144.9678474, 0.42857142857142855], [-37.8194993, 144.9787211, 0.8571428571428571], [-37.8222341, 144.9829409, 1.0]],
+                {
+  "minOpacity": 0.55,
+  "maxZoom": 17,
+  "radius": 55,
+  "blur": 30,
+  "gradient": {
+  0.0: "#2166AC",
+  0.25: "#67A9CF",
+  0.5: "#FFFFBF",
+  0.75: "#F4A582",
+  1.0: "#B2182B",
+},
+}
+            );
+        
+    
+            heat_map_86602e4336aebd4af163da8a087dd25b.addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+            var circle_marker_eab435ec202f30fc3f1663d108de7a21 = L.circleMarker(
+                [-37.812888, 144.9750857],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2513C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_7d24e9cc394db83a2206cd1fbbfa3a67 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_25f9d6363fe1f5272ac537b392761304 = $(`<div id="html_25f9d6363fe1f5272ac537b392761304" style="width: 100.0%; height: 100.0%;"><b>1 Treasury Pl</b><br>Class: street<br>Mean temp: 24.16 °C<br>Mean wind: 2.12 m/s<br>Mean gust: 5.59 m/s<br>Observations: 5,063</div>`)[0];
+                popup_7d24e9cc394db83a2206cd1fbbfa3a67.setContent(html_25f9d6363fe1f5272ac537b392761304);
+            
+        
+
+        circle_marker_eab435ec202f30fc3f1663d108de7a21.bindPopup(popup_7d24e9cc394db83a2206cd1fbbfa3a67)
+        ;
+
+        
+    
+    
+            circle_marker_eab435ec202f30fc3f1663d108de7a21.bindTooltip(
+                `<div>
+                     1 Treasury Pl
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3f836d765786012f4cfa125c85d0eb0 = L.circleMarker(
+                [-37.8221828, 144.9562225],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E8B57", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_3a9344cd671191658b7e78c5afaa8197 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_5f18f88512b42fd675b7e9e2f55e5c39 = $(`<div id="html_5f18f88512b42fd675b7e9e2f55e5c39" style="width: 100.0%; height: 100.0%;"><b>Batman Park</b><br>Class: park<br>Mean temp: 24.67 °C<br>Mean wind: 1.34 m/s<br>Mean gust: 5.79 m/s<br>Observations: 1,796</div>`)[0];
+                popup_3a9344cd671191658b7e78c5afaa8197.setContent(html_5f18f88512b42fd675b7e9e2f55e5c39);
+            
+        
+
+        circle_marker_b3f836d765786012f4cfa125c85d0eb0.bindPopup(popup_3a9344cd671191658b7e78c5afaa8197)
+        ;
+
+        
+    
+    
+            circle_marker_b3f836d765786012f4cfa125c85d0eb0.bindTooltip(
+                `<div>
+                     Batman Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fccdac8be2840135bb512db21392326 = L.circleMarker(
+                [-37.8185931, 144.9716404],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E8B57", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_f28fbc1c15c4d680b3e361579256baf6 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_038fc7e109197bcdd22acc34c8382e2e = $(`<div id="html_038fc7e109197bcdd22acc34c8382e2e" style="width: 100.0%; height: 100.0%;"><b>Birrarung Marr</b><br>Class: park<br>Mean temp: 24.68 °C<br>Mean wind: 0.58 m/s<br>Mean gust: n/a<br>Observations: 3,609</div>`)[0];
+                popup_f28fbc1c15c4d680b3e361579256baf6.setContent(html_038fc7e109197bcdd22acc34c8382e2e);
+            
+        
+
+        circle_marker_6fccdac8be2840135bb512db21392326.bindPopup(popup_f28fbc1c15c4d680b3e361579256baf6)
+        ;
+
+        
+    
+    
+            circle_marker_6fccdac8be2840135bb512db21392326.bindTooltip(
+                `<div>
+                     Birrarung Marr
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fa26d6a758168fbc976ada5f94432560 = L.circleMarker(
+                [-37.8204083, 144.9591192],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E8B57", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_111d1b205de656bf0f29cee93f5d7792 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_92e5a4fd13ba46e4b88624e054080648 = $(`<div id="html_92e5a4fd13ba46e4b88624e054080648" style="width: 100.0%; height: 100.0%;"><b>Enterprize Park</b><br>Class: park<br>Mean temp: 24.37 °C<br>Mean wind: 0.78 m/s<br>Mean gust: 1.79 m/s<br>Observations: 3,131</div>`)[0];
+                popup_111d1b205de656bf0f29cee93f5d7792.setContent(html_92e5a4fd13ba46e4b88624e054080648);
+            
+        
+
+        circle_marker_fa26d6a758168fbc976ada5f94432560.bindPopup(popup_111d1b205de656bf0f29cee93f5d7792)
+        ;
+
+        
+    
+    
+            circle_marker_fa26d6a758168fbc976ada5f94432560.bindTooltip(
+                `<div>
+                     Enterprize Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0bff78b059702215ebd08f29a1aa7816 = L.circleMarker(
+                [-37.7956167, 144.9519007],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2E8B57", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_4d428bc75ec08effb88d6497528f656d = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_ad75aee22fc3e7b7b6299771411e7ccb = $(`<div id="html_ad75aee22fc3e7b7b6299771411e7ccb" style="width: 100.0%; height: 100.0%;"><b>Royal Park</b><br>Class: park<br>Mean temp: 23.93 °C<br>Mean wind: 0.18 m/s<br>Mean gust: 1.84 m/s<br>Observations: 1,765</div>`)[0];
+                popup_4d428bc75ec08effb88d6497528f656d.setContent(html_ad75aee22fc3e7b7b6299771411e7ccb);
+            
+        
+
+        circle_marker_0bff78b059702215ebd08f29a1aa7816.bindPopup(popup_4d428bc75ec08effb88d6497528f656d)
+        ;
+
+        
+    
+    
+            circle_marker_0bff78b059702215ebd08f29a1aa7816.bindTooltip(
+                `<div>
+                     Royal Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52a4bd0036ea578fe008000b70c02c19 = L.circleMarker(
+                [-37.8184515, 144.9678474],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2513C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_5de60d5f144629c2b303a78315a1f485 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_0a7f62b94d264ca69a9efc28abe7a97e = $(`<div id="html_0a7f62b94d264ca69a9efc28abe7a97e" style="width: 100.0%; height: 100.0%;"><b>Swanston Stop 13</b><br>Class: street<br>Mean temp: 24.55 °C<br>Mean wind: 2.19 m/s<br>Mean gust: 6.62 m/s<br>Observations: 3,091</div>`)[0];
+                popup_5de60d5f144629c2b303a78315a1f485.setContent(html_0a7f62b94d264ca69a9efc28abe7a97e);
+            
+        
+
+        circle_marker_52a4bd0036ea578fe008000b70c02c19.bindPopup(popup_5de60d5f144629c2b303a78315a1f485)
+        ;
+
+        
+    
+    
+            circle_marker_52a4bd0036ea578fe008000b70c02c19.bindTooltip(
+                `<div>
+                     Swanston Stop 13
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86209daacdde7bf976f137b8435d01af = L.circleMarker(
+                [-37.8194993, 144.9787211],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2513C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_dcbfdea28dbdad06a5432488f67d2cbb = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_475f92bd4eccbc2bfc9b2db312d16bd2 = $(`<div id="html_475f92bd4eccbc2bfc9b2db312d16bd2" style="width: 100.0%; height: 100.0%;"><b>Tram Stop 7B</b><br>Class: street<br>Mean temp: 25.20 °C<br>Mean wind: 2.06 m/s<br>Mean gust: 8.49 m/s<br>Observations: 3,127</div>`)[0];
+                popup_dcbfdea28dbdad06a5432488f67d2cbb.setContent(html_475f92bd4eccbc2bfc9b2db312d16bd2);
+            
+        
+
+        circle_marker_86209daacdde7bf976f137b8435d01af.bindPopup(popup_dcbfdea28dbdad06a5432488f67d2cbb)
+        ;
+
+        
+    
+    
+            circle_marker_86209daacdde7bf976f137b8435d01af.bindTooltip(
+                `<div>
+                     Tram Stop 7B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a79265fc966cd4dd92069ae1353e965b = L.circleMarker(
+                [-37.8222341, 144.9829409],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#C2513C", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_81e17c15cda14a05c4f22e71a141ec93 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_d12247604f4754b390a4fb2c09d20fe9 = $(`<div id="html_d12247604f4754b390a4fb2c09d20fe9" style="width: 100.0%; height: 100.0%;"><b>Tram Stop 7C</b><br>Class: street<br>Mean temp: 25.31 °C<br>Mean wind: 1.15 m/s<br>Mean gust: 4.96 m/s<br>Observations: 3,136</div>`)[0];
+                popup_81e17c15cda14a05c4f22e71a141ec93.setContent(html_d12247604f4754b390a4fb2c09d20fe9);
+            
+        
+
+        circle_marker_a79265fc966cd4dd92069ae1353e965b.bindPopup(popup_81e17c15cda14a05c4f22e71a141ec93)
+        ;
+
+        
+    
+    
+            circle_marker_a79265fc966cd4dd92069ae1353e965b.bindTooltip(
+                `<div>
+                     Tram Stop 7C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_73f15fab44c440b34d1692ff8394707f = L.circleMarker(
+                [-37.814604, 144.9702991],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B6FB6", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_c17633f145f199ac51f5f9a21f25e935 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_8eabf999bafb3f7e3ecbd0ee6aac5a59 = $(`<div id="html_8eabf999bafb3f7e3ecbd0ee6aac5a59" style="width: 100.0%; height: 100.0%;"><b>101 Collins L11</b><br>Class: rooftop<br>Mean temp: 25.19 °C<br>Mean wind: 1.46 m/s<br>Mean gust: 3.03 m/s<br>Observations: 3,250</div>`)[0];
+                popup_c17633f145f199ac51f5f9a21f25e935.setContent(html_8eabf999bafb3f7e3ecbd0ee6aac5a59);
+            
+        
+
+        circle_marker_73f15fab44c440b34d1692ff8394707f.bindPopup(popup_c17633f145f199ac51f5f9a21f25e935)
+        ;
+
+        
+    
+    
+            circle_marker_73f15fab44c440b34d1692ff8394707f.bindTooltip(
+                `<div>
+                     101 Collins L11
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_579d4e50d1d87c73cca99a8fb13bb91d = L.circleMarker(
+                [-37.8140348, 144.96728],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B6FB6", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_642b242a3e12bec8586b195484f69107 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_cfe1f2f7d8a0f640869d65a36bd357a2 = $(`<div id="html_cfe1f2f7d8a0f640869d65a36bd357a2" style="width: 100.0%; height: 100.0%;"><b>CH1 rooftop</b><br>Class: rooftop<br>Mean temp: 23.75 °C<br>Mean wind: 2.58 m/s<br>Mean gust: 4.04 m/s<br>Observations: 3,071</div>`)[0];
+                popup_642b242a3e12bec8586b195484f69107.setContent(html_cfe1f2f7d8a0f640869d65a36bd357a2);
+            
+        
+
+        circle_marker_579d4e50d1d87c73cca99a8fb13bb91d.bindPopup(popup_642b242a3e12bec8586b195484f69107)
+        ;
+
+        
+    
+    
+            circle_marker_579d4e50d1d87c73cca99a8fb13bb91d.bindTooltip(
+                `<div>
+                     CH1 rooftop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_35dc9cb436a34fe82d13ca44e02ffae8 = L.circleMarker(
+                [-37.8223306, 144.9521696],
+                {"bubblingMouseEvents": true, "color": "#1E5FA8", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3B6FB6", "fillOpacity": 0.95, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_31cd425e09efc80bb9903a3e69358f47);
+        
+    
+        var popup_50a0bf783def73e837b9eaa746bc92b4 = L.popup({
+  "maxWidth": 260,
+});
+
+        
+            
+                var html_26e399fc0bd4d2f8cf7853373bb77750 = $(`<div id="html_26e399fc0bd4d2f8cf7853373bb77750" style="width: 100.0%; height: 100.0%;"><b>MCEC SkyFarm</b><br>Class: rooftop<br>Mean temp: 24.37 °C<br>Mean wind: 1.54 m/s<br>Mean gust: 5.93 m/s<br>Observations: 3,407</div>`)[0];
+                popup_50a0bf783def73e837b9eaa746bc92b4.setContent(html_26e399fc0bd4d2f8cf7853373bb77750);
+            
+        
+
+        circle_marker_35dc9cb436a34fe82d13ca44e02ffae8.bindPopup(popup_50a0bf783def73e837b9eaa746bc92b4)
+        ;
+
+        
+    
+    
+            circle_marker_35dc9cb436a34fe82d13ca44e02ffae8.bindTooltip(
+                `<div>
+                     MCEC SkyFarm
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
