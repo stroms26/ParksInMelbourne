@@ -46,28 +46,22 @@
   ::selection { background: var(--ink); color: var(--paper); }
 
   /* ---------- magazine grid ---------- */
+  /* All three column lines (main, wide, full) collapse onto a single
+     centered track so every section/block shares one consistent width. */
   .grid {
     display: grid;
     grid-template-columns:
-      [full-start] minmax(1.5rem, 1fr)
-      [wide-start] minmax(0, 80px)
-      [main-start] minmax(0, 680px) [main-end]
-      minmax(0, 80px) [wide-end]
-      minmax(1.5rem, 1fr) [full-end];
-    column-gap: 1.5rem;
+      [full-start wide-start main-start] minmax(0, 1000px) [main-end wide-end full-end];
+    justify-content: center;
+    padding: 0 1.5rem;
   }
   .grid > * { grid-column: main; }
-  .wide { grid-column: wide; }
-  .full { grid-column: full; }
+  .wide { grid-column: main; }
+  .full { grid-column: main; }
 
   @media (max-width: 760px) {
     body { font-size: 18px; }
-    .grid {
-      grid-template-columns:
-        [full-start] 1.25rem
-        [wide-start main-start] 1fr [main-end wide-end]
-        1.25rem [full-end];
-    }
+    .grid { padding: 0 1.25rem; }
   }
 
   /* ---------- masthead ---------- */
@@ -221,7 +215,7 @@
     grid-column: wide;
     margin: 2rem 0 1rem;
   }
-  .chart-block.full-bleed { grid-column: full; padding: 0 1.5rem; }
+  .chart-block.full-bleed { grid-column: main; padding: 0; }
   .chart {
     background: var(--paper);
     border: 0.5px solid #d8d2c2;
@@ -5125,9 +5119,9 @@
       <div class="col-grid full">
         <div>
           <h3>Authors</h3>
-          <p>&lt;Group member 1&gt; &mdash; data preparation &amp; cleaning<br/>
-             &lt;Group member 2&gt; &mdash; analysis &amp; hypothesis testing<br/>
-             &lt;Group member 3&gt; &mdash; website design, writing &amp; visualization</p>
+          <p>Harald Stromberg s252909 &mdash; data preparation &amp; cleaning<br/>
+             Findlay Eldridge s57320 &mdash; analysis &amp; hypothesis testing<br/>
+        
         </div>
         <div>
           <h3>Method &amp; Source</h3>
