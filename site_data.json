@@ -1,0 +1,4471 @@
+{
+  "headline_stats": {
+    "park_mean_temp_c": 24.47,
+    "street_mean_temp_c": 24.75,
+    "gap_c": 0.28,
+    "park_mean_rh_pct": 69.8,
+    "street_mean_rh_pct": 63.6,
+    "rh_gap_pp": 6.2,
+    "n_obs": 585161,
+    "n_sensors": 11,
+    "date_start": "2024-05-30",
+    "date_end": "2026-03-16"
+  },
+  "palette": {
+    "park": "#2E8B57",
+    "street": "#C2513C",
+    "rooftop": "#3B6FB6"
+  },
+  "diurnal_temp": {
+    "hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "park": [
+      17.78,
+      17.363,
+      16.996,
+      16.668,
+      16.368,
+      16.155,
+      16.144,
+      16.715,
+      18.018,
+      19.583,
+      20.822,
+      21.975,
+      22.669,
+      23.161,
+      23.541,
+      23.716,
+      23.781,
+      23.38,
+      22.601,
+      21.662,
+      20.437,
+      19.531,
+      18.856,
+      18.301
+    ],
+    "street": [
+      18.102,
+      17.681,
+      17.32,
+      17.002,
+      16.708,
+      16.463,
+      16.442,
+      17.062,
+      18.299,
+      19.811,
+      21.16,
+      22.243,
+      22.966,
+      23.471,
+      23.905,
+      24.106,
+      24.11,
+      23.594,
+      22.76,
+      21.837,
+      20.738,
+      19.849,
+      19.129,
+      18.573
+    ],
+    "rooftop": [
+      18.353,
+      17.996,
+      17.703,
+      17.434,
+      17.164,
+      16.937,
+      16.857,
+      17.148,
+      18.101,
+      19.386,
+      20.66,
+      21.854,
+      22.602,
+      23.168,
+      23.618,
+      23.756,
+      23.797,
+      23.288,
+      22.617,
+      21.712,
+      20.786,
+      20.001,
+      19.338,
+      18.818
+    ]
+  },
+  "diurnal_rh": {
+    "hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "park": [
+      79.055,
+      80.257,
+      81.32,
+      82.016,
+      82.604,
+      82.921,
+      82.852,
+      81.32,
+      77.053,
+      71.189,
+      66.117,
+      61.882,
+      59.193,
+      57.606,
+      56.69,
+      56.613,
+      58.117,
+      61.505,
+      64.937,
+      68.172,
+      71.423,
+      73.849,
+      75.812,
+      77.443
+    ],
+    "street": [
+      69.466,
+      70.492,
+      71.343,
+      72.046,
+      72.68,
+      73.102,
+      73.134,
+      71.8,
+      68.336,
+      63.48,
+      59.051,
+      55.558,
+      53.599,
+      52.377,
+      51.579,
+      51.721,
+      53.1,
+      55.645,
+      58.28,
+      60.815,
+      63.295,
+      65.271,
+      66.959,
+      68.202
+    ],
+    "rooftop": [
+      72.768,
+      73.721,
+      74.465,
+      75.134,
+      75.754,
+      76.11,
+      76.306,
+      75.732,
+      73.102,
+      68.608,
+      64.329,
+      60.377,
+      58.06,
+      56.176,
+      55.145,
+      55.521,
+      56.754,
+      59.227,
+      61.758,
+      64.392,
+      66.722,
+      68.526,
+      70.172,
+      71.489
+    ]
+  },
+  "hourly_cooling_gap": {
+    "hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "gap_c": [
+      0.326,
+      0.303,
+      0.316,
+      0.306,
+      0.289,
+      0.281,
+      0.28,
+      0.293,
+      0.256,
+      0.177,
+      0.23,
+      0.223,
+      0.176,
+      0.189,
+      0.217,
+      0.118,
+      0.092,
+      0.182,
+      0.25,
+      0.266,
+      0.3,
+      0.307,
+      0.308,
+      0.322
+    ]
+  },
+  "daynight_gap": {
+    "day": 0.192,
+    "night": 0.3
+  },
+  "heatwave_scatter": [
+    {
+      "date": "2024-05-30",
+      "citywide_max_c": 18.1,
+      "daytime_gap_c": 0.929,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-05-31",
+      "citywide_max_c": 18.88,
+      "daytime_gap_c": 1.154,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-01",
+      "citywide_max_c": 14.53,
+      "daytime_gap_c": 1.11,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-02",
+      "citywide_max_c": 13.62,
+      "daytime_gap_c": 0.905,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-03",
+      "citywide_max_c": 14.86,
+      "daytime_gap_c": 1.173,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-04",
+      "citywide_max_c": 13.88,
+      "daytime_gap_c": 1.165,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-05",
+      "citywide_max_c": 14.62,
+      "daytime_gap_c": 0.864,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-06",
+      "citywide_max_c": 16.97,
+      "daytime_gap_c": 0.757,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-07",
+      "citywide_max_c": 16.19,
+      "daytime_gap_c": 0.768,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-08",
+      "citywide_max_c": 13.89,
+      "daytime_gap_c": 0.84,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-09",
+      "citywide_max_c": 14.35,
+      "daytime_gap_c": 0.88,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-10",
+      "citywide_max_c": 16.12,
+      "daytime_gap_c": 0.897,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-11",
+      "citywide_max_c": 16.22,
+      "daytime_gap_c": 0.621,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-12",
+      "citywide_max_c": 13.62,
+      "daytime_gap_c": 0.891,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-13",
+      "citywide_max_c": 10.64,
+      "daytime_gap_c": 0.946,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-14",
+      "citywide_max_c": 12.66,
+      "daytime_gap_c": 1.286,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-15",
+      "citywide_max_c": 14.68,
+      "daytime_gap_c": 1.027,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-16",
+      "citywide_max_c": 13.65,
+      "daytime_gap_c": 0.773,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-17",
+      "citywide_max_c": 14.23,
+      "daytime_gap_c": 0.497,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-18",
+      "citywide_max_c": 13.46,
+      "daytime_gap_c": 0.943,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-19",
+      "citywide_max_c": 13.45,
+      "daytime_gap_c": 1.027,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-20",
+      "citywide_max_c": 13.02,
+      "daytime_gap_c": 0.624,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-21",
+      "citywide_max_c": 13.47,
+      "daytime_gap_c": 0.811,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-22",
+      "citywide_max_c": 13.42,
+      "daytime_gap_c": 0.788,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-23",
+      "citywide_max_c": 15.51,
+      "daytime_gap_c": 0.738,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-24",
+      "citywide_max_c": 13.2,
+      "daytime_gap_c": 1.096,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-25",
+      "citywide_max_c": 16.96,
+      "daytime_gap_c": 1.091,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-26",
+      "citywide_max_c": 14.3,
+      "daytime_gap_c": 0.969,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-27",
+      "citywide_max_c": 16.94,
+      "daytime_gap_c": 1.424,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-28",
+      "citywide_max_c": 17.01,
+      "daytime_gap_c": 0.932,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-29",
+      "citywide_max_c": 14.76,
+      "daytime_gap_c": 1.165,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-06-30",
+      "citywide_max_c": 12.01,
+      "daytime_gap_c": 0.667,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-01",
+      "citywide_max_c": 12.35,
+      "daytime_gap_c": 0.287,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-02",
+      "citywide_max_c": 12.33,
+      "daytime_gap_c": 0.592,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-03",
+      "citywide_max_c": 12.05,
+      "daytime_gap_c": 0.603,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-04",
+      "citywide_max_c": 11.73,
+      "daytime_gap_c": 0.983,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-05",
+      "citywide_max_c": 11.92,
+      "daytime_gap_c": 0.807,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-06",
+      "citywide_max_c": 11.34,
+      "daytime_gap_c": 0.631,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-07",
+      "citywide_max_c": 17.02,
+      "daytime_gap_c": 1.208,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-08",
+      "citywide_max_c": 16.22,
+      "daytime_gap_c": 0.958,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-09",
+      "citywide_max_c": 13.03,
+      "daytime_gap_c": 0.723,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-10",
+      "citywide_max_c": 14.08,
+      "daytime_gap_c": 0.649,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-11",
+      "citywide_max_c": 13.73,
+      "daytime_gap_c": 1.211,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-12",
+      "citywide_max_c": 15.45,
+      "daytime_gap_c": 0.054,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-13",
+      "citywide_max_c": 14.2,
+      "daytime_gap_c": 0.696,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-14",
+      "citywide_max_c": 12.05,
+      "daytime_gap_c": 0.701,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-15",
+      "citywide_max_c": 11.35,
+      "daytime_gap_c": 0.938,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-16",
+      "citywide_max_c": 14.02,
+      "daytime_gap_c": 0.666,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-17",
+      "citywide_max_c": 14.7,
+      "daytime_gap_c": 0.91,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-18",
+      "citywide_max_c": 12.7,
+      "daytime_gap_c": 0.937,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-19",
+      "citywide_max_c": 11.86,
+      "daytime_gap_c": 1.045,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-20",
+      "citywide_max_c": 12.09,
+      "daytime_gap_c": 0.894,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-21",
+      "citywide_max_c": 16.77,
+      "daytime_gap_c": 0.65,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-22",
+      "citywide_max_c": 17.17,
+      "daytime_gap_c": 0.992,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-23",
+      "citywide_max_c": 17.9,
+      "daytime_gap_c": 0.679,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-24",
+      "citywide_max_c": 15.95,
+      "daytime_gap_c": 1.131,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-25",
+      "citywide_max_c": 14.69,
+      "daytime_gap_c": 0.868,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-26",
+      "citywide_max_c": 14.52,
+      "daytime_gap_c": 0.545,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-27",
+      "citywide_max_c": 12.78,
+      "daytime_gap_c": 0.9,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-28",
+      "citywide_max_c": 11.63,
+      "daytime_gap_c": 0.765,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-29",
+      "citywide_max_c": 11.72,
+      "daytime_gap_c": 0.749,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-30",
+      "citywide_max_c": 13.69,
+      "daytime_gap_c": 0.066,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-07-31",
+      "citywide_max_c": 10.17,
+      "daytime_gap_c": 0.853,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-01",
+      "citywide_max_c": 16.66,
+      "daytime_gap_c": 0.805,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-02",
+      "citywide_max_c": 15.98,
+      "daytime_gap_c": 1.001,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-03",
+      "citywide_max_c": 14.62,
+      "daytime_gap_c": 0.779,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-04",
+      "citywide_max_c": 15.23,
+      "daytime_gap_c": 0.844,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-05",
+      "citywide_max_c": 16.07,
+      "daytime_gap_c": 0.031,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-06",
+      "citywide_max_c": 17.92,
+      "daytime_gap_c": 0.756,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-07",
+      "citywide_max_c": 18.17,
+      "daytime_gap_c": 0.623,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-08",
+      "citywide_max_c": 14.06,
+      "daytime_gap_c": 0.999,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-09",
+      "citywide_max_c": 18.62,
+      "daytime_gap_c": 0.097,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-10",
+      "citywide_max_c": 17.56,
+      "daytime_gap_c": -0.098,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-11",
+      "citywide_max_c": 20.13,
+      "daytime_gap_c": 0.06,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-12",
+      "citywide_max_c": 20.97,
+      "daytime_gap_c": 0.421,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-13",
+      "citywide_max_c": 20.88,
+      "daytime_gap_c": 0.555,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-14",
+      "citywide_max_c": 21.4,
+      "daytime_gap_c": -4.135,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-15",
+      "citywide_max_c": 20.68,
+      "daytime_gap_c": -3.413,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-16",
+      "citywide_max_c": 16.51,
+      "daytime_gap_c": -2.242,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-17",
+      "citywide_max_c": 15.3,
+      "daytime_gap_c": -2.965,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-18",
+      "citywide_max_c": 16.28,
+      "daytime_gap_c": -3.1,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-19",
+      "citywide_max_c": 18.3,
+      "daytime_gap_c": -3.757,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-20",
+      "citywide_max_c": 17.24,
+      "daytime_gap_c": -2.845,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-21",
+      "citywide_max_c": 18.47,
+      "daytime_gap_c": -3.346,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-22",
+      "citywide_max_c": 18.59,
+      "daytime_gap_c": -3.465,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-23",
+      "citywide_max_c": 18.62,
+      "daytime_gap_c": -2.908,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-24",
+      "citywide_max_c": 22.1,
+      "daytime_gap_c": -3.652,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-25",
+      "citywide_max_c": 23.57,
+      "daytime_gap_c": -4.318,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-26",
+      "citywide_max_c": 18.67,
+      "daytime_gap_c": -3.238,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-27",
+      "citywide_max_c": 19.52,
+      "daytime_gap_c": -2.742,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-28",
+      "citywide_max_c": 19.03,
+      "daytime_gap_c": -2.636,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-29",
+      "citywide_max_c": 17.18,
+      "daytime_gap_c": -3.034,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-30",
+      "citywide_max_c": 19.6,
+      "daytime_gap_c": -3.217,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-08-31",
+      "citywide_max_c": 17.73,
+      "daytime_gap_c": -3.017,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-01",
+      "citywide_max_c": 19.54,
+      "daytime_gap_c": -2.826,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-02",
+      "citywide_max_c": 18.03,
+      "daytime_gap_c": -1.309,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-03",
+      "citywide_max_c": 17.43,
+      "daytime_gap_c": -3.729,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-04",
+      "citywide_max_c": 19.31,
+      "daytime_gap_c": -2.266,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-05",
+      "citywide_max_c": 19.34,
+      "daytime_gap_c": -2.09,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-06",
+      "citywide_max_c": 22.85,
+      "daytime_gap_c": -1.956,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-07",
+      "citywide_max_c": 19.3,
+      "daytime_gap_c": -3.629,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-08",
+      "citywide_max_c": 17.3,
+      "daytime_gap_c": -3.134,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-09",
+      "citywide_max_c": 16.48,
+      "daytime_gap_c": -3.131,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-10",
+      "citywide_max_c": 20.11,
+      "daytime_gap_c": -4.096,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-11",
+      "citywide_max_c": 18.61,
+      "daytime_gap_c": -2.748,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-12",
+      "citywide_max_c": 14.09,
+      "daytime_gap_c": -2.08,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-13",
+      "citywide_max_c": 15.85,
+      "daytime_gap_c": -3.22,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-14",
+      "citywide_max_c": 11.96,
+      "daytime_gap_c": -1.648,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-15",
+      "citywide_max_c": 12.5,
+      "daytime_gap_c": -1.903,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-16",
+      "citywide_max_c": 14.32,
+      "daytime_gap_c": -2.697,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-17",
+      "citywide_max_c": 14.88,
+      "daytime_gap_c": -3.052,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-18",
+      "citywide_max_c": 20.4,
+      "daytime_gap_c": -3.852,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-19",
+      "citywide_max_c": 15.78,
+      "daytime_gap_c": -2.951,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-20",
+      "citywide_max_c": 17.65,
+      "daytime_gap_c": -3.041,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-21",
+      "citywide_max_c": 17.29,
+      "daytime_gap_c": -3.116,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-22",
+      "citywide_max_c": 19.58,
+      "daytime_gap_c": -3.443,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-23",
+      "citywide_max_c": 18.25,
+      "daytime_gap_c": -3.309,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-24",
+      "citywide_max_c": 24.94,
+      "daytime_gap_c": -4.962,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-25",
+      "citywide_max_c": 17.05,
+      "daytime_gap_c": -2.125,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-26",
+      "citywide_max_c": 13.2,
+      "daytime_gap_c": -1.398,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-27",
+      "citywide_max_c": 15.41,
+      "daytime_gap_c": -3.137,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-28",
+      "citywide_max_c": 21.93,
+      "daytime_gap_c": -3.947,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-29",
+      "citywide_max_c": 17.94,
+      "daytime_gap_c": -1.34,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-09-30",
+      "citywide_max_c": 18.86,
+      "daytime_gap_c": -3.648,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-01",
+      "citywide_max_c": 16.85,
+      "daytime_gap_c": -1.426,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-02",
+      "citywide_max_c": 16.14,
+      "daytime_gap_c": 0.346,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-03",
+      "citywide_max_c": 25.98,
+      "daytime_gap_c": 0.504,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-04",
+      "citywide_max_c": 23.77,
+      "daytime_gap_c": 0.258,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-05",
+      "citywide_max_c": 19.94,
+      "daytime_gap_c": 0.343,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-06",
+      "citywide_max_c": 20.9,
+      "daytime_gap_c": 0.61,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-07",
+      "citywide_max_c": 17.41,
+      "daytime_gap_c": 0.098,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-08",
+      "citywide_max_c": 14.11,
+      "daytime_gap_c": 0.232,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-09",
+      "citywide_max_c": 19.19,
+      "daytime_gap_c": 0.21,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-10",
+      "citywide_max_c": 19.48,
+      "daytime_gap_c": 0.119,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-11",
+      "citywide_max_c": 17.04,
+      "daytime_gap_c": 0.334,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-12",
+      "citywide_max_c": 17.08,
+      "daytime_gap_c": 0.457,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-13",
+      "citywide_max_c": 24.61,
+      "daytime_gap_c": 0.039,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-14",
+      "citywide_max_c": 19.6,
+      "daytime_gap_c": 0.469,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-15",
+      "citywide_max_c": 27.15,
+      "daytime_gap_c": 0.206,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-16",
+      "citywide_max_c": 25.4,
+      "daytime_gap_c": 0.233,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-17",
+      "citywide_max_c": 25.41,
+      "daytime_gap_c": 0.383,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-18",
+      "citywide_max_c": 22.5,
+      "daytime_gap_c": 0.265,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-19",
+      "citywide_max_c": 16.46,
+      "daytime_gap_c": 0.42,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-20",
+      "citywide_max_c": 17.97,
+      "daytime_gap_c": 0.152,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-21",
+      "citywide_max_c": 28.14,
+      "daytime_gap_c": 0.442,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-22",
+      "citywide_max_c": 31.07,
+      "daytime_gap_c": -0.237,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-23",
+      "citywide_max_c": 19.94,
+      "daytime_gap_c": -0.042,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-24",
+      "citywide_max_c": 16.26,
+      "daytime_gap_c": 0.296,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-25",
+      "citywide_max_c": 15.26,
+      "daytime_gap_c": 0.272,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-26",
+      "citywide_max_c": 23.19,
+      "daytime_gap_c": 0.454,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-27",
+      "citywide_max_c": 26.13,
+      "daytime_gap_c": 0.041,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-28",
+      "citywide_max_c": 16.57,
+      "daytime_gap_c": 0.242,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-29",
+      "citywide_max_c": 18.28,
+      "daytime_gap_c": 0.0,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-30",
+      "citywide_max_c": 21.38,
+      "daytime_gap_c": 0.004,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-10-31",
+      "citywide_max_c": 18.36,
+      "daytime_gap_c": 0.212,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-01",
+      "citywide_max_c": 16.37,
+      "daytime_gap_c": 0.269,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-02",
+      "citywide_max_c": 26.34,
+      "daytime_gap_c": -0.136,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-03",
+      "citywide_max_c": 25.06,
+      "daytime_gap_c": 0.312,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-04",
+      "citywide_max_c": 18.94,
+      "daytime_gap_c": 0.309,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-05",
+      "citywide_max_c": 26.17,
+      "daytime_gap_c": 0.052,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-06",
+      "citywide_max_c": 32.54,
+      "daytime_gap_c": 0.578,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-07",
+      "citywide_max_c": 20.92,
+      "daytime_gap_c": 0.798,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-08",
+      "citywide_max_c": 19.71,
+      "daytime_gap_c": 0.258,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-09",
+      "citywide_max_c": 19.19,
+      "daytime_gap_c": 0.346,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-10",
+      "citywide_max_c": 20.77,
+      "daytime_gap_c": 0.37,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-11",
+      "citywide_max_c": 24.11,
+      "daytime_gap_c": 0.631,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-12",
+      "citywide_max_c": 24.6,
+      "daytime_gap_c": 0.537,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-13",
+      "citywide_max_c": 19.15,
+      "daytime_gap_c": 0.256,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-14",
+      "citywide_max_c": 17.07,
+      "daytime_gap_c": 0.204,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-15",
+      "citywide_max_c": 18.8,
+      "daytime_gap_c": 0.375,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-16",
+      "citywide_max_c": 34.2,
+      "daytime_gap_c": -0.101,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-17",
+      "citywide_max_c": 29.72,
+      "daytime_gap_c": 0.643,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-18",
+      "citywide_max_c": 18.34,
+      "daytime_gap_c": 0.219,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-19",
+      "citywide_max_c": 16.98,
+      "daytime_gap_c": 0.174,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-20",
+      "citywide_max_c": 17.67,
+      "daytime_gap_c": 0.259,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-21",
+      "citywide_max_c": 25.14,
+      "daytime_gap_c": 0.531,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-22",
+      "citywide_max_c": 36.37,
+      "daytime_gap_c": 0.725,
+      "is_heatwave": true
+    },
+    {
+      "date": "2024-11-23",
+      "citywide_max_c": 36.87,
+      "daytime_gap_c": 0.396,
+      "is_heatwave": true
+    },
+    {
+      "date": "2024-11-24",
+      "citywide_max_c": 22.44,
+      "daytime_gap_c": -0.07,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-25",
+      "citywide_max_c": 18.83,
+      "daytime_gap_c": 0.24,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-26",
+      "citywide_max_c": 26.03,
+      "daytime_gap_c": 0.432,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-27",
+      "citywide_max_c": 29.88,
+      "daytime_gap_c": 0.331,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-28",
+      "citywide_max_c": 24.21,
+      "daytime_gap_c": 0.437,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-29",
+      "citywide_max_c": 30.34,
+      "daytime_gap_c": 0.294,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-11-30",
+      "citywide_max_c": 23.54,
+      "daytime_gap_c": 0.407,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-01",
+      "citywide_max_c": 24.72,
+      "daytime_gap_c": 0.322,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-02",
+      "citywide_max_c": 32.67,
+      "daytime_gap_c": 0.178,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-03",
+      "citywide_max_c": 31.32,
+      "daytime_gap_c": 0.087,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-04",
+      "citywide_max_c": 23.67,
+      "daytime_gap_c": 0.368,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-05",
+      "citywide_max_c": 33.33,
+      "daytime_gap_c": 0.366,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-06",
+      "citywide_max_c": 29.65,
+      "daytime_gap_c": 0.262,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-07",
+      "citywide_max_c": 26.85,
+      "daytime_gap_c": 0.277,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-08",
+      "citywide_max_c": 20.49,
+      "daytime_gap_c": 0.309,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-09",
+      "citywide_max_c": 21.51,
+      "daytime_gap_c": 0.394,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-10",
+      "citywide_max_c": 21.25,
+      "daytime_gap_c": 0.354,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-11",
+      "citywide_max_c": 24.75,
+      "daytime_gap_c": 0.455,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-12",
+      "citywide_max_c": 26.52,
+      "daytime_gap_c": 0.174,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-13",
+      "citywide_max_c": 21.23,
+      "daytime_gap_c": 0.334,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-14",
+      "citywide_max_c": 23.71,
+      "daytime_gap_c": 0.275,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-15",
+      "citywide_max_c": 31.0,
+      "daytime_gap_c": 0.626,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-16",
+      "citywide_max_c": 39.62,
+      "daytime_gap_c": 0.779,
+      "is_heatwave": true
+    },
+    {
+      "date": "2024-12-17",
+      "citywide_max_c": 23.42,
+      "daytime_gap_c": 0.245,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-18",
+      "citywide_max_c": 21.31,
+      "daytime_gap_c": 0.326,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-19",
+      "citywide_max_c": 31.0,
+      "daytime_gap_c": 0.46,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-20",
+      "citywide_max_c": 34.87,
+      "daytime_gap_c": 0.202,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-21",
+      "citywide_max_c": 20.23,
+      "daytime_gap_c": 0.313,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-22",
+      "citywide_max_c": 21.15,
+      "daytime_gap_c": 0.233,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-23",
+      "citywide_max_c": 18.04,
+      "daytime_gap_c": 0.54,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-24",
+      "citywide_max_c": 22.52,
+      "daytime_gap_c": 0.469,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-25",
+      "citywide_max_c": 33.68,
+      "daytime_gap_c": 0.753,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-26",
+      "citywide_max_c": 37.09,
+      "daytime_gap_c": 0.484,
+      "is_heatwave": true
+    },
+    {
+      "date": "2024-12-27",
+      "citywide_max_c": 21.16,
+      "daytime_gap_c": 0.37,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-28",
+      "citywide_max_c": 23.82,
+      "daytime_gap_c": 0.185,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-29",
+      "citywide_max_c": 24.97,
+      "daytime_gap_c": 0.457,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-30",
+      "citywide_max_c": 26.33,
+      "daytime_gap_c": 0.388,
+      "is_heatwave": false
+    },
+    {
+      "date": "2024-12-31",
+      "citywide_max_c": 24.43,
+      "daytime_gap_c": 0.54,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-01",
+      "citywide_max_c": 21.11,
+      "daytime_gap_c": 0.403,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-02",
+      "citywide_max_c": 20.27,
+      "daytime_gap_c": 0.337,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-03",
+      "citywide_max_c": 25.3,
+      "daytime_gap_c": 0.485,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-04",
+      "citywide_max_c": 37.7,
+      "daytime_gap_c": 0.546,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-01-05",
+      "citywide_max_c": 38.2,
+      "daytime_gap_c": 0.423,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-01-06",
+      "citywide_max_c": 29.3,
+      "daytime_gap_c": 0.107,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-07",
+      "citywide_max_c": 25.09,
+      "daytime_gap_c": 0.276,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-08",
+      "citywide_max_c": 30.35,
+      "daytime_gap_c": 0.359,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-09",
+      "citywide_max_c": 32.18,
+      "daytime_gap_c": 0.005,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-10",
+      "citywide_max_c": 27.83,
+      "daytime_gap_c": 0.528,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-11",
+      "citywide_max_c": 33.79,
+      "daytime_gap_c": 0.539,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-12",
+      "citywide_max_c": 28.21,
+      "daytime_gap_c": 0.071,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-13",
+      "citywide_max_c": 24.82,
+      "daytime_gap_c": 0.4,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-14",
+      "citywide_max_c": 26.28,
+      "daytime_gap_c": 0.591,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-15",
+      "citywide_max_c": 23.94,
+      "daytime_gap_c": 0.397,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-16",
+      "citywide_max_c": 21.25,
+      "daytime_gap_c": 0.348,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-17",
+      "citywide_max_c": 21.39,
+      "daytime_gap_c": 0.399,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-18",
+      "citywide_max_c": 30.59,
+      "daytime_gap_c": 0.811,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-19",
+      "citywide_max_c": 33.73,
+      "daytime_gap_c": 0.376,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-20",
+      "citywide_max_c": 34.03,
+      "daytime_gap_c": 0.758,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-21",
+      "citywide_max_c": 28.72,
+      "daytime_gap_c": 0.537,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-22",
+      "citywide_max_c": 21.76,
+      "daytime_gap_c": 0.12,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-23",
+      "citywide_max_c": 20.73,
+      "daytime_gap_c": 0.382,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-24",
+      "citywide_max_c": 22.98,
+      "daytime_gap_c": 0.498,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-25",
+      "citywide_max_c": 24.15,
+      "daytime_gap_c": 0.474,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-26",
+      "citywide_max_c": 23.24,
+      "daytime_gap_c": 0.779,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-27",
+      "citywide_max_c": 39.86,
+      "daytime_gap_c": 0.515,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-01-28",
+      "citywide_max_c": 22.35,
+      "daytime_gap_c": 0.217,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-29",
+      "citywide_max_c": 20.38,
+      "daytime_gap_c": 0.645,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-30",
+      "citywide_max_c": 21.16,
+      "daytime_gap_c": 0.661,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-01-31",
+      "citywide_max_c": 22.38,
+      "daytime_gap_c": 0.517,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-01",
+      "citywide_max_c": 28.54,
+      "daytime_gap_c": 0.768,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-02",
+      "citywide_max_c": 39.73,
+      "daytime_gap_c": 0.217,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-02-03",
+      "citywide_max_c": 37.87,
+      "daytime_gap_c": 0.729,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-02-04",
+      "citywide_max_c": 38.12,
+      "daytime_gap_c": 0.509,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-02-05",
+      "citywide_max_c": 23.54,
+      "daytime_gap_c": 0.845,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-06",
+      "citywide_max_c": 30.98,
+      "daytime_gap_c": 0.717,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-07",
+      "citywide_max_c": 23.64,
+      "daytime_gap_c": 0.406,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-08",
+      "citywide_max_c": 21.79,
+      "daytime_gap_c": 0.298,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-09",
+      "citywide_max_c": 27.93,
+      "daytime_gap_c": 0.573,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-10",
+      "citywide_max_c": 26.29,
+      "daytime_gap_c": 0.667,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-11",
+      "citywide_max_c": 30.99,
+      "daytime_gap_c": 0.909,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-12",
+      "citywide_max_c": 33.46,
+      "daytime_gap_c": 1.089,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-13",
+      "citywide_max_c": 34.57,
+      "daytime_gap_c": -0.136,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-14",
+      "citywide_max_c": 22.83,
+      "daytime_gap_c": 0.428,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-15",
+      "citywide_max_c": 17.48,
+      "daytime_gap_c": 0.571,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-16",
+      "citywide_max_c": 18.15,
+      "daytime_gap_c": 0.384,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-17",
+      "citywide_max_c": 20.6,
+      "daytime_gap_c": 0.509,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-18",
+      "citywide_max_c": 21.27,
+      "daytime_gap_c": 0.329,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-19",
+      "citywide_max_c": 19.26,
+      "daytime_gap_c": 0.468,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-20",
+      "citywide_max_c": 20.46,
+      "daytime_gap_c": 0.523,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-21",
+      "citywide_max_c": 32.81,
+      "daytime_gap_c": 1.097,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-22",
+      "citywide_max_c": 36.44,
+      "daytime_gap_c": 0.274,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-02-23",
+      "citywide_max_c": 31.31,
+      "daytime_gap_c": 0.236,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-24",
+      "citywide_max_c": 22.29,
+      "daytime_gap_c": 0.447,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-25",
+      "citywide_max_c": 24.25,
+      "daytime_gap_c": 0.774,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-26",
+      "citywide_max_c": 35.48,
+      "daytime_gap_c": 0.49,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-02-27",
+      "citywide_max_c": 23.92,
+      "daytime_gap_c": 0.299,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-02-28",
+      "citywide_max_c": 26.22,
+      "daytime_gap_c": 0.353,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-01",
+      "citywide_max_c": 24.76,
+      "daytime_gap_c": 0.419,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-02",
+      "citywide_max_c": 20.57,
+      "daytime_gap_c": 0.299,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-03",
+      "citywide_max_c": 20.79,
+      "daytime_gap_c": 0.655,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-04",
+      "citywide_max_c": 33.16,
+      "daytime_gap_c": 1.93,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-05",
+      "citywide_max_c": 35.24,
+      "daytime_gap_c": 0.63,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-03-06",
+      "citywide_max_c": 23.75,
+      "daytime_gap_c": 0.87,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-07",
+      "citywide_max_c": 28.49,
+      "daytime_gap_c": 0.405,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-08",
+      "citywide_max_c": 33.31,
+      "daytime_gap_c": 0.474,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-09",
+      "citywide_max_c": 35.22,
+      "daytime_gap_c": 0.225,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-03-10",
+      "citywide_max_c": 32.34,
+      "daytime_gap_c": 0.318,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-11",
+      "citywide_max_c": 32.15,
+      "daytime_gap_c": 0.447,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-12",
+      "citywide_max_c": 34.94,
+      "daytime_gap_c": 0.418,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-13",
+      "citywide_max_c": 23.66,
+      "daytime_gap_c": 0.341,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-14",
+      "citywide_max_c": 26.27,
+      "daytime_gap_c": 0.408,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-15",
+      "citywide_max_c": 34.48,
+      "daytime_gap_c": 0.938,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-16",
+      "citywide_max_c": 25.52,
+      "daytime_gap_c": 0.326,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-17",
+      "citywide_max_c": 19.01,
+      "daytime_gap_c": 0.577,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-18",
+      "citywide_max_c": 24.42,
+      "daytime_gap_c": 0.878,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-19",
+      "citywide_max_c": 32.68,
+      "daytime_gap_c": 0.766,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-20",
+      "citywide_max_c": 26.97,
+      "daytime_gap_c": 0.204,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-21",
+      "citywide_max_c": 19.21,
+      "daytime_gap_c": 0.191,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-22",
+      "citywide_max_c": 20.59,
+      "daytime_gap_c": 0.502,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-23",
+      "citywide_max_c": 22.29,
+      "daytime_gap_c": 0.537,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-24",
+      "citywide_max_c": 20.86,
+      "daytime_gap_c": 0.443,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-25",
+      "citywide_max_c": 22.95,
+      "daytime_gap_c": 0.75,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-26",
+      "citywide_max_c": 20.84,
+      "daytime_gap_c": 0.336,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-27",
+      "citywide_max_c": 21.63,
+      "daytime_gap_c": 0.724,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-28",
+      "citywide_max_c": 30.43,
+      "daytime_gap_c": 0.457,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-29",
+      "citywide_max_c": 22.29,
+      "daytime_gap_c": 0.434,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-30",
+      "citywide_max_c": 21.22,
+      "daytime_gap_c": 0.403,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-03-31",
+      "citywide_max_c": 21.36,
+      "daytime_gap_c": 0.482,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-01",
+      "citywide_max_c": 22.77,
+      "daytime_gap_c": 0.527,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-02",
+      "citywide_max_c": 23.84,
+      "daytime_gap_c": 0.358,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-03",
+      "citywide_max_c": 20.76,
+      "daytime_gap_c": 0.39,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-04",
+      "citywide_max_c": 17.57,
+      "daytime_gap_c": 0.5,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-05",
+      "citywide_max_c": 17.99,
+      "daytime_gap_c": 0.579,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-06",
+      "citywide_max_c": 22.09,
+      "daytime_gap_c": 0.567,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-07",
+      "citywide_max_c": 17.97,
+      "daytime_gap_c": 0.363,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-08",
+      "citywide_max_c": 18.54,
+      "daytime_gap_c": 0.185,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-09",
+      "citywide_max_c": 20.62,
+      "daytime_gap_c": 0.357,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-10",
+      "citywide_max_c": 28.31,
+      "daytime_gap_c": 0.928,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-11",
+      "citywide_max_c": 22.03,
+      "daytime_gap_c": 0.39,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-12",
+      "citywide_max_c": 26.71,
+      "daytime_gap_c": 0.675,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-13",
+      "citywide_max_c": 32.32,
+      "daytime_gap_c": 0.915,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-14",
+      "citywide_max_c": 21.84,
+      "daytime_gap_c": 0.68,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-15",
+      "citywide_max_c": 28.01,
+      "daytime_gap_c": 0.829,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-16",
+      "citywide_max_c": 28.72,
+      "daytime_gap_c": 0.713,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-17",
+      "citywide_max_c": 30.29,
+      "daytime_gap_c": 0.313,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-18",
+      "citywide_max_c": 31.46,
+      "daytime_gap_c": 0.368,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-19",
+      "citywide_max_c": 29.8,
+      "daytime_gap_c": 0.44,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-20",
+      "citywide_max_c": 25.07,
+      "daytime_gap_c": 0.235,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-21",
+      "citywide_max_c": 21.05,
+      "daytime_gap_c": 0.112,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-22",
+      "citywide_max_c": 19.24,
+      "daytime_gap_c": 0.445,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-23",
+      "citywide_max_c": 23.62,
+      "daytime_gap_c": 0.094,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-24",
+      "citywide_max_c": 27.04,
+      "daytime_gap_c": 0.376,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-25",
+      "citywide_max_c": 24.69,
+      "daytime_gap_c": 0.041,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-26",
+      "citywide_max_c": 19.51,
+      "daytime_gap_c": 0.492,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-27",
+      "citywide_max_c": 17.28,
+      "daytime_gap_c": 0.317,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-28",
+      "citywide_max_c": 18.92,
+      "daytime_gap_c": 0.441,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-29",
+      "citywide_max_c": 17.43,
+      "daytime_gap_c": 0.151,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-04-30",
+      "citywide_max_c": 18.58,
+      "daytime_gap_c": 0.599,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-01",
+      "citywide_max_c": 19.43,
+      "daytime_gap_c": 0.774,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-02",
+      "citywide_max_c": 21.68,
+      "daytime_gap_c": 0.77,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-03",
+      "citywide_max_c": 21.61,
+      "daytime_gap_c": 0.637,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-04",
+      "citywide_max_c": 23.6,
+      "daytime_gap_c": 0.42,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-05",
+      "citywide_max_c": 24.67,
+      "daytime_gap_c": 0.457,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-06",
+      "citywide_max_c": 27.16,
+      "daytime_gap_c": 0.733,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-07",
+      "citywide_max_c": 20.31,
+      "daytime_gap_c": 0.34,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-08",
+      "citywide_max_c": 16.99,
+      "daytime_gap_c": 0.461,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-09",
+      "citywide_max_c": 18.24,
+      "daytime_gap_c": 0.3,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-10",
+      "citywide_max_c": 19.3,
+      "daytime_gap_c": 0.165,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-11",
+      "citywide_max_c": 23.88,
+      "daytime_gap_c": 0.849,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-12",
+      "citywide_max_c": 20.63,
+      "daytime_gap_c": 0.163,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-13",
+      "citywide_max_c": 21.94,
+      "daytime_gap_c": 0.488,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-14",
+      "citywide_max_c": 19.11,
+      "daytime_gap_c": 0.242,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-15",
+      "citywide_max_c": 17.99,
+      "daytime_gap_c": 0.57,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-16",
+      "citywide_max_c": 17.66,
+      "daytime_gap_c": 0.655,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-17",
+      "citywide_max_c": 14.39,
+      "daytime_gap_c": 0.226,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-18",
+      "citywide_max_c": 14.38,
+      "daytime_gap_c": 0.368,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-19",
+      "citywide_max_c": 14.69,
+      "daytime_gap_c": 0.362,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-20",
+      "citywide_max_c": 18.33,
+      "daytime_gap_c": 0.222,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-21",
+      "citywide_max_c": 15.17,
+      "daytime_gap_c": 0.159,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-22",
+      "citywide_max_c": 16.77,
+      "daytime_gap_c": 0.368,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-23",
+      "citywide_max_c": 16.79,
+      "daytime_gap_c": 0.225,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-24",
+      "citywide_max_c": 18.97,
+      "daytime_gap_c": 0.397,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-25",
+      "citywide_max_c": 18.88,
+      "daytime_gap_c": 0.161,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-26",
+      "citywide_max_c": 20.29,
+      "daytime_gap_c": 0.414,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-27",
+      "citywide_max_c": 14.4,
+      "daytime_gap_c": 0.22,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-28",
+      "citywide_max_c": 14.33,
+      "daytime_gap_c": 0.254,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-29",
+      "citywide_max_c": 15.86,
+      "daytime_gap_c": 0.276,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-30",
+      "citywide_max_c": 15.4,
+      "daytime_gap_c": 0.394,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-05-31",
+      "citywide_max_c": 15.79,
+      "daytime_gap_c": 0.262,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-01",
+      "citywide_max_c": 18.04,
+      "daytime_gap_c": 0.375,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-02",
+      "citywide_max_c": 20.27,
+      "daytime_gap_c": 0.577,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-03",
+      "citywide_max_c": 13.54,
+      "daytime_gap_c": 0.137,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-04",
+      "citywide_max_c": 13.28,
+      "daytime_gap_c": 0.155,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-05",
+      "citywide_max_c": 15.85,
+      "daytime_gap_c": 0.686,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-06",
+      "citywide_max_c": 14.61,
+      "daytime_gap_c": 0.505,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-07",
+      "citywide_max_c": 14.55,
+      "daytime_gap_c": 0.275,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-08",
+      "citywide_max_c": 11.78,
+      "daytime_gap_c": 0.501,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-09",
+      "citywide_max_c": 14.14,
+      "daytime_gap_c": 0.243,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-10",
+      "citywide_max_c": 15.14,
+      "daytime_gap_c": 0.705,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-11",
+      "citywide_max_c": 14.36,
+      "daytime_gap_c": 0.226,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-12",
+      "citywide_max_c": 15.36,
+      "daytime_gap_c": 0.087,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-13",
+      "citywide_max_c": 14.41,
+      "daytime_gap_c": 0.324,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-14",
+      "citywide_max_c": 11.62,
+      "daytime_gap_c": 0.481,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-15",
+      "citywide_max_c": 13.38,
+      "daytime_gap_c": 0.395,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-16",
+      "citywide_max_c": 13.85,
+      "daytime_gap_c": 0.33,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-17",
+      "citywide_max_c": 12.88,
+      "daytime_gap_c": 0.798,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-18",
+      "citywide_max_c": 12.51,
+      "daytime_gap_c": 0.69,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-19",
+      "citywide_max_c": 12.31,
+      "daytime_gap_c": 0.168,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-20",
+      "citywide_max_c": 17.7,
+      "daytime_gap_c": 0.963,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-21",
+      "citywide_max_c": 12.82,
+      "daytime_gap_c": 0.356,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-22",
+      "citywide_max_c": 16.4,
+      "daytime_gap_c": 0.702,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-23",
+      "citywide_max_c": 19.02,
+      "daytime_gap_c": 0.605,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-24",
+      "citywide_max_c": 15.04,
+      "daytime_gap_c": 0.281,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-25",
+      "citywide_max_c": 10.31,
+      "daytime_gap_c": 0.468,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-26",
+      "citywide_max_c": 12.67,
+      "daytime_gap_c": 0.28,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-27",
+      "citywide_max_c": 14.18,
+      "daytime_gap_c": 0.28,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-28",
+      "citywide_max_c": 15.13,
+      "daytime_gap_c": 0.674,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-29",
+      "citywide_max_c": 12.82,
+      "daytime_gap_c": 0.298,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-06-30",
+      "citywide_max_c": 13.5,
+      "daytime_gap_c": 0.583,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-01",
+      "citywide_max_c": 13.46,
+      "daytime_gap_c": 0.245,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-02",
+      "citywide_max_c": 11.5,
+      "daytime_gap_c": 0.359,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-03",
+      "citywide_max_c": 13.81,
+      "daytime_gap_c": 0.22,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-04",
+      "citywide_max_c": 16.0,
+      "daytime_gap_c": 0.565,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-05",
+      "citywide_max_c": 18.14,
+      "daytime_gap_c": 0.708,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-06",
+      "citywide_max_c": 16.83,
+      "daytime_gap_c": 0.874,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-07",
+      "citywide_max_c": 17.85,
+      "daytime_gap_c": 0.9,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-08",
+      "citywide_max_c": 14.82,
+      "daytime_gap_c": 0.441,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-09",
+      "citywide_max_c": 12.1,
+      "daytime_gap_c": 0.501,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-10",
+      "citywide_max_c": 12.06,
+      "daytime_gap_c": 0.64,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-11",
+      "citywide_max_c": 16.44,
+      "daytime_gap_c": 0.528,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-12",
+      "citywide_max_c": 17.05,
+      "daytime_gap_c": 0.748,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-13",
+      "citywide_max_c": 15.39,
+      "daytime_gap_c": 0.462,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-14",
+      "citywide_max_c": 14.1,
+      "daytime_gap_c": 0.554,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-15",
+      "citywide_max_c": 13.01,
+      "daytime_gap_c": 0.396,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-16",
+      "citywide_max_c": 13.6,
+      "daytime_gap_c": 0.25,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-17",
+      "citywide_max_c": 15.98,
+      "daytime_gap_c": 0.509,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-18",
+      "citywide_max_c": 16.32,
+      "daytime_gap_c": 0.875,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-19",
+      "citywide_max_c": 14.23,
+      "daytime_gap_c": 0.396,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-20",
+      "citywide_max_c": 15.32,
+      "daytime_gap_c": 0.75,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-21",
+      "citywide_max_c": 16.67,
+      "daytime_gap_c": 0.61,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-22",
+      "citywide_max_c": 16.54,
+      "daytime_gap_c": 0.05,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-23",
+      "citywide_max_c": 12.83,
+      "daytime_gap_c": 0.607,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-24",
+      "citywide_max_c": 16.82,
+      "daytime_gap_c": 0.124,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-25",
+      "citywide_max_c": 12.75,
+      "daytime_gap_c": 0.648,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-26",
+      "citywide_max_c": 13.56,
+      "daytime_gap_c": 0.472,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-27",
+      "citywide_max_c": 13.94,
+      "daytime_gap_c": 0.175,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-28",
+      "citywide_max_c": 15.12,
+      "daytime_gap_c": 0.694,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-29",
+      "citywide_max_c": 13.73,
+      "daytime_gap_c": 0.009,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-30",
+      "citywide_max_c": 12.49,
+      "daytime_gap_c": 0.097,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-07-31",
+      "citywide_max_c": 13.67,
+      "daytime_gap_c": 0.239,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-01",
+      "citywide_max_c": 13.13,
+      "daytime_gap_c": 0.37,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-02",
+      "citywide_max_c": 16.0,
+      "daytime_gap_c": 0.644,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-03",
+      "citywide_max_c": 19.71,
+      "daytime_gap_c": 0.859,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-04",
+      "citywide_max_c": 17.77,
+      "daytime_gap_c": 0.625,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-05",
+      "citywide_max_c": 16.66,
+      "daytime_gap_c": 0.515,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-06",
+      "citywide_max_c": 14.72,
+      "daytime_gap_c": 0.483,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-07",
+      "citywide_max_c": 13.71,
+      "daytime_gap_c": 0.194,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-08",
+      "citywide_max_c": 13.87,
+      "daytime_gap_c": -0.008,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-09",
+      "citywide_max_c": 15.2,
+      "daytime_gap_c": -0.142,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-10",
+      "citywide_max_c": 18.35,
+      "daytime_gap_c": -0.186,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-11",
+      "citywide_max_c": 19.11,
+      "daytime_gap_c": 0.828,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-12",
+      "citywide_max_c": 14.88,
+      "daytime_gap_c": 0.18,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-13",
+      "citywide_max_c": 14.71,
+      "daytime_gap_c": 0.0,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-14",
+      "citywide_max_c": 19.41,
+      "daytime_gap_c": 0.888,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-15",
+      "citywide_max_c": 14.26,
+      "daytime_gap_c": 0.381,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-16",
+      "citywide_max_c": 12.86,
+      "daytime_gap_c": 0.677,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-17",
+      "citywide_max_c": 13.67,
+      "daytime_gap_c": 0.298,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-18",
+      "citywide_max_c": 11.99,
+      "daytime_gap_c": 0.294,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-19",
+      "citywide_max_c": 16.83,
+      "daytime_gap_c": 1.073,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-20",
+      "citywide_max_c": 18.62,
+      "daytime_gap_c": 0.093,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-21",
+      "citywide_max_c": 20.56,
+      "daytime_gap_c": 0.216,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-22",
+      "citywide_max_c": 19.62,
+      "daytime_gap_c": 0.364,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-23",
+      "citywide_max_c": 15.07,
+      "daytime_gap_c": 0.159,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-24",
+      "citywide_max_c": 14.57,
+      "daytime_gap_c": 0.442,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-25",
+      "citywide_max_c": 18.35,
+      "daytime_gap_c": 0.383,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-26",
+      "citywide_max_c": 16.95,
+      "daytime_gap_c": 0.19,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-27",
+      "citywide_max_c": 15.39,
+      "daytime_gap_c": 0.616,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-28",
+      "citywide_max_c": 16.47,
+      "daytime_gap_c": 0.769,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-29",
+      "citywide_max_c": 13.47,
+      "daytime_gap_c": -0.068,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-30",
+      "citywide_max_c": 12.49,
+      "daytime_gap_c": 0.467,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-08-31",
+      "citywide_max_c": 17.03,
+      "daytime_gap_c": 0.57,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-01",
+      "citywide_max_c": 15.7,
+      "daytime_gap_c": 0.274,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-02",
+      "citywide_max_c": 17.04,
+      "daytime_gap_c": -0.011,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-03",
+      "citywide_max_c": 19.68,
+      "daytime_gap_c": 0.747,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-04",
+      "citywide_max_c": 15.06,
+      "daytime_gap_c": 0.226,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-05",
+      "citywide_max_c": 14.93,
+      "daytime_gap_c": 0.24,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-06",
+      "citywide_max_c": 22.04,
+      "daytime_gap_c": 0.41,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-07",
+      "citywide_max_c": 20.67,
+      "daytime_gap_c": 0.4,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-08",
+      "citywide_max_c": 19.61,
+      "daytime_gap_c": 0.127,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-09",
+      "citywide_max_c": 15.84,
+      "daytime_gap_c": 0.062,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-10",
+      "citywide_max_c": 13.01,
+      "daytime_gap_c": 0.154,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-11",
+      "citywide_max_c": 14.51,
+      "daytime_gap_c": 0.242,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-12",
+      "citywide_max_c": 17.02,
+      "daytime_gap_c": 0.498,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-13",
+      "citywide_max_c": 16.75,
+      "daytime_gap_c": 0.125,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-14",
+      "citywide_max_c": 21.34,
+      "daytime_gap_c": 0.035,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-15",
+      "citywide_max_c": 24.33,
+      "daytime_gap_c": 0.175,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-16",
+      "citywide_max_c": 21.2,
+      "daytime_gap_c": 0.252,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-17",
+      "citywide_max_c": 16.41,
+      "daytime_gap_c": 0.508,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-18",
+      "citywide_max_c": 19.8,
+      "daytime_gap_c": 0.097,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-19",
+      "citywide_max_c": 22.8,
+      "daytime_gap_c": 0.169,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-20",
+      "citywide_max_c": 15.24,
+      "daytime_gap_c": 0.486,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-21",
+      "citywide_max_c": 17.25,
+      "daytime_gap_c": 0.246,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-22",
+      "citywide_max_c": 14.0,
+      "daytime_gap_c": 0.216,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-23",
+      "citywide_max_c": 17.78,
+      "daytime_gap_c": 0.331,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-24",
+      "citywide_max_c": 17.08,
+      "daytime_gap_c": 0.083,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-25",
+      "citywide_max_c": 17.37,
+      "daytime_gap_c": 0.448,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-26",
+      "citywide_max_c": 23.94,
+      "daytime_gap_c": 0.517,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-27",
+      "citywide_max_c": 19.39,
+      "daytime_gap_c": 0.398,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-28",
+      "citywide_max_c": 16.03,
+      "daytime_gap_c": -0.331,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-29",
+      "citywide_max_c": 23.23,
+      "daytime_gap_c": -0.077,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-09-30",
+      "citywide_max_c": 20.61,
+      "daytime_gap_c": 0.211,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-01",
+      "citywide_max_c": 17.71,
+      "daytime_gap_c": 0.149,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-02",
+      "citywide_max_c": 14.62,
+      "daytime_gap_c": 0.388,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-03",
+      "citywide_max_c": 18.09,
+      "daytime_gap_c": 0.002,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-04",
+      "citywide_max_c": 25.37,
+      "daytime_gap_c": 0.562,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-05",
+      "citywide_max_c": 26.39,
+      "daytime_gap_c": 0.344,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-06",
+      "citywide_max_c": 18.61,
+      "daytime_gap_c": 0.521,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-07",
+      "citywide_max_c": 20.21,
+      "daytime_gap_c": 0.276,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-08",
+      "citywide_max_c": 24.14,
+      "daytime_gap_c": 0.457,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-09",
+      "citywide_max_c": 21.3,
+      "daytime_gap_c": 0.379,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-10",
+      "citywide_max_c": 22.32,
+      "daytime_gap_c": 0.652,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-11",
+      "citywide_max_c": 22.17,
+      "daytime_gap_c": 0.604,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-12",
+      "citywide_max_c": 19.88,
+      "daytime_gap_c": 0.343,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-13",
+      "citywide_max_c": 17.42,
+      "daytime_gap_c": -0.162,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-14",
+      "citywide_max_c": 20.07,
+      "daytime_gap_c": -0.279,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-15",
+      "citywide_max_c": 22.0,
+      "daytime_gap_c": -0.072,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-16",
+      "citywide_max_c": 29.97,
+      "daytime_gap_c": 0.801,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-17",
+      "citywide_max_c": 19.15,
+      "daytime_gap_c": 0.165,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-18",
+      "citywide_max_c": 20.14,
+      "daytime_gap_c": -0.158,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-19",
+      "citywide_max_c": 27.38,
+      "daytime_gap_c": 0.722,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-20",
+      "citywide_max_c": 19.49,
+      "daytime_gap_c": 0.535,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-21",
+      "citywide_max_c": 20.93,
+      "daytime_gap_c": 0.165,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-22",
+      "citywide_max_c": 21.67,
+      "daytime_gap_c": 0.508,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-23",
+      "citywide_max_c": 17.51,
+      "daytime_gap_c": 0.193,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-24",
+      "citywide_max_c": 17.41,
+      "daytime_gap_c": 0.154,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-25",
+      "citywide_max_c": 16.16,
+      "daytime_gap_c": 0.397,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-26",
+      "citywide_max_c": 18.27,
+      "daytime_gap_c": 0.343,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-27",
+      "citywide_max_c": 14.18,
+      "daytime_gap_c": 0.187,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-28",
+      "citywide_max_c": 18.23,
+      "daytime_gap_c": 0.342,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-29",
+      "citywide_max_c": 20.12,
+      "daytime_gap_c": -0.126,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-30",
+      "citywide_max_c": 25.86,
+      "daytime_gap_c": 0.827,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-10-31",
+      "citywide_max_c": 20.56,
+      "daytime_gap_c": 0.165,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-01",
+      "citywide_max_c": 19.87,
+      "daytime_gap_c": -0.208,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-02",
+      "citywide_max_c": 33.24,
+      "daytime_gap_c": 0.324,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-03",
+      "citywide_max_c": 19.06,
+      "daytime_gap_c": 0.252,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-04",
+      "citywide_max_c": 17.47,
+      "daytime_gap_c": 0.77,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-05",
+      "citywide_max_c": 20.38,
+      "daytime_gap_c": 0.819,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-06",
+      "citywide_max_c": 25.72,
+      "daytime_gap_c": 0.507,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-07",
+      "citywide_max_c": 26.29,
+      "daytime_gap_c": 0.753,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-08",
+      "citywide_max_c": 15.14,
+      "daytime_gap_c": 0.749,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-09",
+      "citywide_max_c": 15.5,
+      "daytime_gap_c": 0.351,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-10",
+      "citywide_max_c": 18.44,
+      "daytime_gap_c": 0.585,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-11",
+      "citywide_max_c": 13.47,
+      "daytime_gap_c": 0.685,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-12",
+      "citywide_max_c": 19.81,
+      "daytime_gap_c": 0.578,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-13",
+      "citywide_max_c": 24.77,
+      "daytime_gap_c": 0.195,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-14",
+      "citywide_max_c": 17.49,
+      "daytime_gap_c": 0.258,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-15",
+      "citywide_max_c": 21.99,
+      "daytime_gap_c": 0.321,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-16",
+      "citywide_max_c": 20.49,
+      "daytime_gap_c": 0.636,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-17",
+      "citywide_max_c": 16.71,
+      "daytime_gap_c": 0.576,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-18",
+      "citywide_max_c": 23.97,
+      "daytime_gap_c": 0.992,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-19",
+      "citywide_max_c": 21.24,
+      "daytime_gap_c": 0.276,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-20",
+      "citywide_max_c": 16.23,
+      "daytime_gap_c": 0.197,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-21",
+      "citywide_max_c": 18.34,
+      "daytime_gap_c": 0.533,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-22",
+      "citywide_max_c": 24.53,
+      "daytime_gap_c": 0.258,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-23",
+      "citywide_max_c": 18.75,
+      "daytime_gap_c": 0.744,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-24",
+      "citywide_max_c": 27.76,
+      "daytime_gap_c": 0.417,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-25",
+      "citywide_max_c": 25.56,
+      "daytime_gap_c": -0.19,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-26",
+      "citywide_max_c": 22.43,
+      "daytime_gap_c": 0.667,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-27",
+      "citywide_max_c": 19.81,
+      "daytime_gap_c": 0.441,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-28",
+      "citywide_max_c": 23.25,
+      "daytime_gap_c": 0.117,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-29",
+      "citywide_max_c": 17.41,
+      "daytime_gap_c": 0.321,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-11-30",
+      "citywide_max_c": 16.56,
+      "daytime_gap_c": 0.406,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-01",
+      "citywide_max_c": 15.97,
+      "daytime_gap_c": 0.354,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-02",
+      "citywide_max_c": 18.64,
+      "daytime_gap_c": 0.484,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-03",
+      "citywide_max_c": 31.07,
+      "daytime_gap_c": 0.408,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-04",
+      "citywide_max_c": 35.25,
+      "daytime_gap_c": 0.688,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-12-05",
+      "citywide_max_c": 23.43,
+      "daytime_gap_c": -0.083,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-06",
+      "citywide_max_c": 18.86,
+      "daytime_gap_c": 0.083,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-07",
+      "citywide_max_c": 20.44,
+      "daytime_gap_c": 0.283,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-08",
+      "citywide_max_c": 29.02,
+      "daytime_gap_c": 0.74,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-09",
+      "citywide_max_c": 22.17,
+      "daytime_gap_c": 0.283,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-10",
+      "citywide_max_c": 19.13,
+      "daytime_gap_c": 0.457,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-11",
+      "citywide_max_c": 20.35,
+      "daytime_gap_c": 0.749,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-12",
+      "citywide_max_c": 32.86,
+      "daytime_gap_c": 0.571,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-13",
+      "citywide_max_c": 25.84,
+      "daytime_gap_c": 0.363,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-14",
+      "citywide_max_c": 21.15,
+      "daytime_gap_c": 0.449,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-15",
+      "citywide_max_c": 17.52,
+      "daytime_gap_c": 0.359,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-16",
+      "citywide_max_c": 19.18,
+      "daytime_gap_c": 0.411,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-17",
+      "citywide_max_c": 31.36,
+      "daytime_gap_c": 0.571,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-18",
+      "citywide_max_c": 38.58,
+      "daytime_gap_c": 0.046,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-12-19",
+      "citywide_max_c": 33.21,
+      "daytime_gap_c": 0.514,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-20",
+      "citywide_max_c": 21.69,
+      "daytime_gap_c": -0.088,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-21",
+      "citywide_max_c": 18.97,
+      "daytime_gap_c": 0.108,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-22",
+      "citywide_max_c": 20.46,
+      "daytime_gap_c": 0.415,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-23",
+      "citywide_max_c": 19.97,
+      "daytime_gap_c": 0.09,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-24",
+      "citywide_max_c": 20.02,
+      "daytime_gap_c": 0.33,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-25",
+      "citywide_max_c": 16.8,
+      "daytime_gap_c": 0.016,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-26",
+      "citywide_max_c": 17.01,
+      "daytime_gap_c": 0.305,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-27",
+      "citywide_max_c": 20.08,
+      "daytime_gap_c": 0.111,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-28",
+      "citywide_max_c": 28.9,
+      "daytime_gap_c": 0.134,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-29",
+      "citywide_max_c": 35.45,
+      "daytime_gap_c": 0.271,
+      "is_heatwave": true
+    },
+    {
+      "date": "2025-12-30",
+      "citywide_max_c": 33.51,
+      "daytime_gap_c": -0.323,
+      "is_heatwave": false
+    },
+    {
+      "date": "2025-12-31",
+      "citywide_max_c": 17.86,
+      "daytime_gap_c": 0.268,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-01",
+      "citywide_max_c": 19.54,
+      "daytime_gap_c": 0.674,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-02",
+      "citywide_max_c": 25.5,
+      "daytime_gap_c": -0.121,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-03",
+      "citywide_max_c": 31.67,
+      "daytime_gap_c": 0.216,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-04",
+      "citywide_max_c": 20.47,
+      "daytime_gap_c": 0.204,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-05",
+      "citywide_max_c": 21.07,
+      "daytime_gap_c": 0.148,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-06",
+      "citywide_max_c": 30.62,
+      "daytime_gap_c": 0.253,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-07",
+      "citywide_max_c": 41.97,
+      "daytime_gap_c": 0.394,
+      "is_heatwave": true
+    },
+    {
+      "date": "2026-01-08",
+      "citywide_max_c": 30.41,
+      "daytime_gap_c": 0.356,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-09",
+      "citywide_max_c": 43.43,
+      "daytime_gap_c": -0.23,
+      "is_heatwave": true
+    },
+    {
+      "date": "2026-01-10",
+      "citywide_max_c": 25.06,
+      "daytime_gap_c": 0.59,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-11",
+      "citywide_max_c": 18.95,
+      "daytime_gap_c": 0.126,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-12",
+      "citywide_max_c": 21.89,
+      "daytime_gap_c": 0.327,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-13",
+      "citywide_max_c": 20.62,
+      "daytime_gap_c": 0.296,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-14",
+      "citywide_max_c": 26.18,
+      "daytime_gap_c": 0.798,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-15",
+      "citywide_max_c": 25.52,
+      "daytime_gap_c": 0.062,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-16",
+      "citywide_max_c": 24.59,
+      "daytime_gap_c": 0.518,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-17",
+      "citywide_max_c": 27.23,
+      "daytime_gap_c": 0.338,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-18",
+      "citywide_max_c": 29.36,
+      "daytime_gap_c": 0.357,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-19",
+      "citywide_max_c": 31.35,
+      "daytime_gap_c": -0.003,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-20",
+      "citywide_max_c": 26.01,
+      "daytime_gap_c": 0.375,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-21",
+      "citywide_max_c": 23.1,
+      "daytime_gap_c": 0.311,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-22",
+      "citywide_max_c": 19.59,
+      "daytime_gap_c": 0.145,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-23",
+      "citywide_max_c": 25.43,
+      "daytime_gap_c": 0.046,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-24",
+      "citywide_max_c": 39.58,
+      "daytime_gap_c": 0.694,
+      "is_heatwave": true
+    },
+    {
+      "date": "2026-01-25",
+      "citywide_max_c": 31.12,
+      "daytime_gap_c": -0.116,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-26",
+      "citywide_max_c": 33.34,
+      "daytime_gap_c": 0.127,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-27",
+      "citywide_max_c": 43.62,
+      "daytime_gap_c": -0.085,
+      "is_heatwave": true
+    },
+    {
+      "date": "2026-01-28",
+      "citywide_max_c": 24.08,
+      "daytime_gap_c": 0.184,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-29",
+      "citywide_max_c": 23.48,
+      "daytime_gap_c": 0.416,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-30",
+      "citywide_max_c": 29.34,
+      "daytime_gap_c": -0.07,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-01-31",
+      "citywide_max_c": 25.34,
+      "daytime_gap_c": 0.175,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-01",
+      "citywide_max_c": 21.07,
+      "daytime_gap_c": 0.399,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-02",
+      "citywide_max_c": 20.21,
+      "daytime_gap_c": 0.42,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-03",
+      "citywide_max_c": 31.77,
+      "daytime_gap_c": -0.13,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-04",
+      "citywide_max_c": 31.28,
+      "daytime_gap_c": 0.162,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-05",
+      "citywide_max_c": 22.45,
+      "daytime_gap_c": 0.037,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-06",
+      "citywide_max_c": 22.69,
+      "daytime_gap_c": -1.257,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-07",
+      "citywide_max_c": 24.14,
+      "daytime_gap_c": -0.83,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-08",
+      "citywide_max_c": 31.06,
+      "daytime_gap_c": -0.602,
+      "is_heatwave": false
+    },
+    {
+      "date": "2026-02-09",
+      "citywide_max_c": 20.68,
+      "daytime_gap_c": -0.179,
+      "is_heatwave": false
+    }
+  ],
+  "heatwave_regression": {
+    "slope": 0.0088,
+    "intercept": -0.022,
+    "x0": 10.17,
+    "x1": 43.62,
+    "y0": 0.067,
+    "y1": 0.362
+  },
+  "month_hour_heatmap": {
+    "months": [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec"
+    ],
+    "hours": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "values": [
+      [
+        0.195,
+        0.171,
+        0.172,
+        0.164,
+        0.199,
+        0.205,
+        0.178,
+        0.225,
+        0.159,
+        0.071,
+        0.209,
+        0.21,
+        0.233,
+        0.351,
+        0.396,
+        0.343,
+        0.366,
+        0.238,
+        0.115,
+        0.058,
+        0.095,
+        0.163,
+        0.18,
+        0.186
+      ],
+      [
+        0.191,
+        0.152,
+        0.171,
+        0.174,
+        0.234,
+        0.303,
+        0.197,
+        0.237,
+        0.276,
+        0.056,
+        0.145,
+        0.138,
+        0.268,
+        0.306,
+        0.415,
+        0.408,
+        0.363,
+        0.236,
+        0.076,
+        0.153,
+        0.269,
+        0.223,
+        0.131,
+        0.136
+      ],
+      [
+        0.212,
+        0.204,
+        0.222,
+        0.262,
+        0.152,
+        0.118,
+        0.073,
+        0.073,
+        0.23,
+        0.277,
+        0.22,
+        0.171,
+        0.352,
+        0.545,
+        0.593,
+        0.707,
+        0.496,
+        0.366,
+        0.375,
+        0.445,
+        0.394,
+        0.326,
+        0.264,
+        0.314
+      ],
+      [
+        0.221,
+        0.252,
+        0.227,
+        0.158,
+        0.15,
+        0.123,
+        0.056,
+        0.288,
+        0.381,
+        0.37,
+        0.476,
+        0.62,
+        0.479,
+        0.501,
+        0.6,
+        0.38,
+        0.334,
+        0.416,
+        0.474,
+        0.414,
+        0.32,
+        0.243,
+        0.194,
+        0.18
+      ],
+      [
+        0.378,
+        0.262,
+        0.254,
+        0.161,
+        0.137,
+        0.127,
+        0.194,
+        0.135,
+        0.265,
+        0.153,
+        0.434,
+        0.744,
+        0.626,
+        0.689,
+        0.568,
+        0.222,
+        0.199,
+        0.466,
+        0.401,
+        0.358,
+        0.297,
+        0.287,
+        0.385,
+        0.397
+      ],
+      [
+        0.825,
+        0.838,
+        0.829,
+        0.885,
+        0.773,
+        0.81,
+        0.861,
+        0.787,
+        0.827,
+        0.897,
+        0.772,
+        0.794,
+        0.707,
+        0.722,
+        0.76,
+        0.489,
+        0.604,
+        0.827,
+        0.925,
+        0.871,
+        0.869,
+        0.867,
+        0.855,
+        0.863
+      ],
+      [
+        0.792,
+        0.769,
+        0.796,
+        0.852,
+        0.777,
+        0.832,
+        0.783,
+        0.753,
+        0.885,
+        0.837,
+        0.806,
+        0.78,
+        0.769,
+        0.638,
+        0.68,
+        0.502,
+        0.517,
+        0.754,
+        0.841,
+        0.821,
+        0.832,
+        0.815,
+        0.796,
+        0.759
+      ],
+      [
+        0.277,
+        0.234,
+        0.233,
+        0.186,
+        0.222,
+        0.125,
+        0.089,
+        0.185,
+        0.141,
+        -0.114,
+        -0.097,
+        -0.133,
+        -0.543,
+        -0.544,
+        -0.703,
+        -0.844,
+        -0.8,
+        -0.252,
+        0.099,
+        0.104,
+        0.07,
+        0.129,
+        0.159,
+        0.324
+      ],
+      [
+        -0.544,
+        -0.572,
+        -0.538,
+        -0.583,
+        -0.686,
+        -0.699,
+        -0.697,
+        -0.748,
+        -0.94,
+        -1.097,
+        -1.132,
+        -1.216,
+        -1.384,
+        -1.326,
+        -1.294,
+        -1.41,
+        -1.361,
+        -1.153,
+        -0.915,
+        -0.749,
+        -0.756,
+        -0.672,
+        -0.555,
+        -0.591
+      ],
+      [
+        0.472,
+        0.433,
+        0.515,
+        0.476,
+        0.526,
+        0.499,
+        0.489,
+        0.567,
+        0.522,
+        0.394,
+        0.309,
+        0.306,
+        0.324,
+        0.279,
+        0.306,
+        0.308,
+        0.138,
+        0.206,
+        0.255,
+        0.436,
+        0.602,
+        0.531,
+        0.495,
+        0.513
+      ],
+      [
+        0.42,
+        0.467,
+        0.516,
+        0.501,
+        0.515,
+        0.485,
+        0.472,
+        0.422,
+        0.23,
+        0.188,
+        0.408,
+        0.286,
+        0.383,
+        0.331,
+        0.487,
+        0.444,
+        0.408,
+        0.281,
+        0.36,
+        0.367,
+        0.44,
+        0.419,
+        0.409,
+        0.398
+      ],
+      [
+        0.33,
+        0.263,
+        0.218,
+        0.209,
+        0.228,
+        0.209,
+        0.36,
+        0.363,
+        0.138,
+        0.167,
+        0.379,
+        0.352,
+        0.367,
+        0.379,
+        0.412,
+        0.441,
+        0.308,
+        0.145,
+        0.162,
+        0.069,
+        0.197,
+        0.272,
+        0.257,
+        0.255
+      ]
+    ]
+  },
+  "sensors": [
+    {
+      "name": "1 Treasury Pl",
+      "class": "street",
+      "lat": -37.81289,
+      "lon": 144.97509,
+      "mean_temp_c": 24.16,
+      "n_obs": 5063
+    },
+    {
+      "name": "101 Collins L11",
+      "class": "rooftop",
+      "lat": -37.8146,
+      "lon": 144.9703,
+      "mean_temp_c": 25.19,
+      "n_obs": 3250
+    },
+    {
+      "name": "Batman Park",
+      "class": "park",
+      "lat": -37.82218,
+      "lon": 144.95622,
+      "mean_temp_c": 24.67,
+      "n_obs": 1796
+    },
+    {
+      "name": "Birrarung Marr",
+      "class": "park",
+      "lat": -37.81859,
+      "lon": 144.97164,
+      "mean_temp_c": 24.68,
+      "n_obs": 3609
+    },
+    {
+      "name": "CH1 rooftop",
+      "class": "rooftop",
+      "lat": -37.81403,
+      "lon": 144.96728,
+      "mean_temp_c": 23.75,
+      "n_obs": 3071
+    },
+    {
+      "name": "Enterprize Park",
+      "class": "park",
+      "lat": -37.82041,
+      "lon": 144.95912,
+      "mean_temp_c": 24.37,
+      "n_obs": 3131
+    },
+    {
+      "name": "Royal Park",
+      "class": "park",
+      "lat": -37.79562,
+      "lon": 144.9519,
+      "mean_temp_c": 23.93,
+      "n_obs": 1765
+    },
+    {
+      "name": "MCEC SkyFarm",
+      "class": "rooftop",
+      "lat": -37.82233,
+      "lon": 144.95217,
+      "mean_temp_c": 24.37,
+      "n_obs": 3407
+    },
+    {
+      "name": "Swanston Stop 13",
+      "class": "street",
+      "lat": -37.81845,
+      "lon": 144.96785,
+      "mean_temp_c": 24.55,
+      "n_obs": 3091
+    },
+    {
+      "name": "Tram Stop 7B",
+      "class": "street",
+      "lat": -37.8195,
+      "lon": 144.97872,
+      "mean_temp_c": 25.2,
+      "n_obs": 3127
+    },
+    {
+      "name": "Tram Stop 7C",
+      "class": "street",
+      "lat": -37.82223,
+      "lon": 144.98294,
+      "mean_temp_c": 25.31,
+      "n_obs": 3136
+    }
+  ]
+}
